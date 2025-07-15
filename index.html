@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DreamWeaver AI Meme Generator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🌀 DreamWeaver AI Meme Generator</h1>
+
+    <textarea id="dream-input" placeholder="Describe your dream..."></textarea>
+    <button onclick="processDream()">Auto Generate</button>
+
+    <select id="meme-template"></select>
+    <input type="text" id="top-text" placeholder="Top Text"/>
+    <input type="text" id="bottom-text" placeholder="Bottom Text"/>
+    <button onclick="generateMeme()">Generate Meme</button>
+
+    <div id="meme-result">
+      <img id="meme-image" crossorigin="anonymous"/>
+    </div>
+
+    <button onclick="downloadMeme()">Download Meme</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
